@@ -9,7 +9,7 @@ $(document).ready(function() {
 
   let result = 0;
 
-  btn.click(function(){
+  btn.one("click", function(){
     totalPayouts.each(function() {
 
       result += parseFloat($(this).html());
